@@ -1,25 +1,80 @@
-import logo from './logo.svg';
-import './App.css';
+/*import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import ProductDetail from './pages/ProductDetail';
+import Cart from './pages/Cart';
+import { FETCH_PRODUCTS } from './redux/product/types';
+import { FETCH_CATEGORIES } from './redux/category/types';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: FETCH_PRODUCTS });
+    dispatch({ type: FETCH_CATEGORIES });
+  }, [dispatch]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <div style={{ minHeight: '80vh', padding: '20px' }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 
 export default App;
+*/
+
+
+
+
+
+
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import ProductDetail from './pages/ProductDetail';
+import Cart from './pages/Cart';
+import { FETCH_PRODUCTS } from './redux/product/types';
+import { FETCH_CATEGORIES } from './redux/category/types';
+
+function App() {
+  const dispatch = useDispatch();
+  const [searchQuery, setSearchQuery] = useState('');
+
+  useEffect(() => {
+    dispatch({ type: FETCH_PRODUCTS });
+    dispatch({ type: FETCH_CATEGORIES });
+  }, [dispatch]);
+
+  return (
+    <Router>
+      <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <div style={{ minHeight: '80vh', padding: '20px' }}>
+        <Routes>
+          <Route path="/" element={<Home searchQuery={searchQuery} />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
+  );
+}
+
+export default App;
+
+
