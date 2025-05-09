@@ -100,7 +100,7 @@
 
 
 
-  .cart {
+ /* .cart {
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -164,7 +164,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
     .cart-item {
         flex-direction: column;
         align-items: flex-start;
@@ -179,3 +179,129 @@
         justify-content: space-between;
     }
 }
+*/
+
+
+
+
+/*.cart {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .cart ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .quantity-controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .quantity-controls button:hover {
+    background: #555;
+  }
+  
+  .remove-btn {
+    background: #c0392b;
+    margin-top: 5px;
+  }
+  
+  .remove-btn:hover {
+    background: #e74c3c;
+  }
+  */
+
+
+
+
+  .cart {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .cart ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .quantity-controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .quantity-controls button:hover {
+    background: #555;
+  }
+  
+  .remove-btn {
+    background: #c0392b;
+    margin-top: 5px;
+  }
+  
+  .remove-btn:hover {
+    background: #e74c3c;
+  }

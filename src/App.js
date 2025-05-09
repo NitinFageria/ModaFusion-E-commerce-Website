@@ -40,7 +40,7 @@ export default App;
 
 
 
-import React, { useEffect, useState } from 'react';
+/*import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import Header from './components/Header';
@@ -77,4 +77,38 @@ function App() {
 
 export default App;
 
+*/
 
+
+
+
+
+
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import ProductDetail from './pages/ProductDetail';
+import './App.css';
+
+const App = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (term) => {
+    setSearchQuery(term.toLowerCase());
+  };
+
+  return (
+    <Router>
+      <Header onSearch={handleSearch} />
+      <Routes>
+        <Route path="/" element={<Home searchQuery={searchQuery} />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
+      </Routes>
+    </Router>
+  );
+};
+
+export default App;
