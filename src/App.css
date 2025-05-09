@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.page-content {
+  min-height: calc(100vh - 60px); /* adjust based on your header/footer height */
+}
+
+.with-footer-space {
+  padding-bottom: 60px; /* creates space above footer only on cart + detail */
+}
