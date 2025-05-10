@@ -6,7 +6,7 @@ import cartReducer from './cart/reducers'; // ✅
 const rootReducer = combineReducers({
   products: productReducer,
   categories: categoryReducer,
-  cart: cartReducer, // ✅ make sure this is added!
+  cart: cartReducer,
 });
 
 export default rootReducer;
