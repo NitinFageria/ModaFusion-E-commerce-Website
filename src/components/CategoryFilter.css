@@ -1,179 +1,44 @@
-/*.category-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .category-button {
-    padding: 8px 16px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background-color: #f8f8f8;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 14px;
-  }
-  
-  .category-button:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .category-button.active {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
-  }
-  */
 
-
-
-
-  /*
-  .category-filter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 20px;
-    justify-content: center;
-}
-
-.category-button {
-    padding: 8px 16px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background-color: #f8f8f8;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 14px;
-}
-
-.category-button:hover {
-    background-color: #e0e0e0;
-}
-
-.category-button.active {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
-}
-
-/* Responsive adjustments */
-/*@media (max-width: 480px) {
-    .category-button {
-        flex: 1 1 100%;
-        text-align: center;
-        font-size: 13px;
-    }
-}
-*/
-
-
-
-
-/*
-.category-filter {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-}
-
-/* Arrange filters horizontally on wider screens */
-/*@media (min-width: 769px) {
-    .category-filter {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-}
-
-.category-button {
-    padding: 8px 16px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background-color: #f8f8f8;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 14px;
-}
-
-.category-button:hover {
-    background-color: #e0e0e0;
-}
-
-.category-button.active {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
-}
-
-/* Hide filters on mobile */
-/*@media (max-width: 768px) {
-    .category-filter {
-        display: none;
-    }
-}
-*/
-
-
-
-
-
-
-.category-filter-wrapper {
-    margin-bottom: 20px;
+  .category-filter-wrapper {
+    width: 100%;
   }
   
   .category-filter {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: flex-start; /* left align on desktop */
+    padding: 10px 40px;
   }
   
   .category-button {
-    padding: 8px 16px;
-    border: 1px solid #ddd;
+    background-color: #ffffff;
+    color: #004080;
+    border: 1px solid #004080;
+    padding: 6px 14px;
     border-radius: 20px;
-    background-color: #f8f8f8;
     cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 14px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
   }
   
   .category-button:hover {
-    background-color: #e0e0e0;
+    background-color: #004080;
+    color: #ffffff;
   }
   
   .category-button.active {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
+    background-color: #00254d;
+    color: #ffffff;
+    border-color: #00254d;
   }
   
-  /* Toggle visibility classes */
-  .hidden {
-    display: none;
-  }
-  
-  .visible {
-    display: block;
-  }
-  
-  /* Responsive adjustments */
   @media (max-width: 768px) {
     .category-filter {
       flex-direction: column;
       align-items: flex-start;
+      padding: 10px 20px;
     }
   
-    .category-button {
-      width: 100%;
-      text-align: left;
-      font-size: 14px;
-    }
   }
+  
   
